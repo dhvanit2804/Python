@@ -1,4 +1,5 @@
 # Dictionary is a collection of keys-value pairs.
+d = {} # Empty Dictionary
 
 marks = {
     "Dhvanit": 99,
