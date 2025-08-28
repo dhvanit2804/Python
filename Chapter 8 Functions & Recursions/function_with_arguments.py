@@ -7,3 +7,7 @@ def greet_user(name, ending):
     return "Ok"
 
 greet_user("Dhvanit", "Thank You")
+greet_user("Rohan", "Dhanyvaad")
+
+a = greet_user("Rahul", "Thanks") # This will call the function and store the return value in 'a'
+print(a)
