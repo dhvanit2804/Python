@@ -8,14 +8,16 @@
 'When Class is defined, no memory is allocated until an object is created.'
 
 class Employee:
-    language = "Python"
+    language = "Python" # Class attribute
     salary = 1200000
     company = "Google"
 
 dhvanit = Employee()
-dhvanit.name = "Dhvanit Parate"
+dhvanit.name = "Dhvanit Parate" # This is an instance attribute
 print(dhvanit.name, dhvanit.language, dhvanit.salary, dhvanit.company)
 
 rahul = Employee()
 rahul.name = "Rahul"
 print(rahul.name, rahul.language, rahul.salary, rahul.company)
+
+'Here name is object attribute and language, salary, company are class attributes.'
