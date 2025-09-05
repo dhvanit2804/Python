@@ -1,3 +1,6 @@
+'What is multilevel inheritance in Python?'
+'Multilevel inheritance is a type of inheritance in which a class is derived from another derived class.'
+
 class Employee:
     a = 10
 
