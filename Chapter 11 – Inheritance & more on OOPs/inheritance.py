@@ -2,6 +2,11 @@
 'Inheritance is a mechanism in OOP that allows a class to inherit attributes and methods from another class.'
 'Inheritance is a way of creating a new class from an existing class.'
 
+'''TYPES OF INHERITANCE 
+• Single inheritance 
+• Multiple inheritance 
+• Multilevel inheritance'''
+
 class Employee:
     company = "ITC"
     def show(self):
@@ -15,6 +20,7 @@ class Employee:
 #     def showlanguage(self):
 #         print(f"The name is {self.name} he is good in {self.language} language")
 
+'This is how we use inheritance in Python'
 class Programmer(Employee):
     company = "ITC infotech"
     def showlanguage(self):
