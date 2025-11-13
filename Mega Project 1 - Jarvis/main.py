@@ -48,6 +48,7 @@ if __name__ == "__main__":
                     audio = recognizer.listen(source)
                     command = recognizer.recognize_google(audio)
 
+                    print(f"Command Received: {command}")
                     processCommand(command)
 
         except Exception as e:
