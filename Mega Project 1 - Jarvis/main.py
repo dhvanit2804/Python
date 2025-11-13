@@ -17,23 +17,22 @@ if __name__ == "__main__":
     speak("Initializing Jarvis......")
     while True:
         # Listen for the wake word "Jarvis"
-        r = sr.Recognizer()
         
         print("recognizing...")
         try:
             with sr.Microphone() as source:
                 print("Listening...")
-                audio = r.listen(source, timeout=2, phrase_time_limit=1)
-            word = r.recognize_google(audio)
-            if "jarvis" in word.lower():
+                audio = recognizer.listen(source, timeout=3, phrase_time_limit=1)
+            word = recognizer.recognize_google(audio)
+            if(word.lower() == "jarvis"):
                 speak("Ya")
                 # Listen for command
                 with sr.Microphone() as source:
                     print("Jarvis Active...")
-                    audio = r.listen(source)
-                    command = r.recognize_google(audio)
+                    audio = recognizer.listen(source)
+                    command = recognizer.recognize_google(audio)
 
-                    processCommand(c)
+                    processCommand("Hi")
 
 
         except Exception as e:
