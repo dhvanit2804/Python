@@ -7,3 +7,8 @@
 '''An environment which is same as the system interpreter but is isolated from the other 
 Python environments on the system.'''
 
+
+def add(a, b):
+    return a + b
+
+print(add(3, 4))
